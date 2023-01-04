@@ -5,7 +5,7 @@ def main_function(**kwargs):
     return main_dct
 
 
-main_function(brand='Volvo', model='XC90', year=2022)
+main_function(brand='Kia', model='Sportage', year=2018)
 main_function(sedan='Volkswagen', Coupe='Porsche')
 main_function(January='spring', June='summer')
 main_function(name='Vitalii', age=38, eyes_color='green')
@@ -16,3 +16,6 @@ print(main_dct)
 def year_seasons(a):
     dct = {1: "winter", 2: "winter", 3: "spring", 4: "spring", 5:"spring", 6: "summer",
            7: "summer", 8: "summer", 9: "autumn", 10: "autumn", 11: "autumn", 12: "winter"}
+    return dct[a]
+
+print(year_seasons(4))
